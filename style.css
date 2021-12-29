@@ -35,11 +35,6 @@ a:hover {
 	padding: 10px;
 }
 
-.separator {
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
 .title-menu {
 	color: #003d85;
 	font-weight: bold;
@@ -51,7 +46,7 @@ a:hover {
 .container {
 	display: flex;
 	margin-top: 20px;
-	margin-left: 20%;
+	justify-content: center;
 }
 
 .content {
