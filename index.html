@@ -7,6 +7,13 @@
       <link rel="icon" href="iconpm.png">
       <link rel="stylesheet" type="text/css" href="style.css">
       <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+      <script>
+         const date = new Date();
+         const today = date.getDate() + "%2F" + (date.getMonth() + 1) + "%2F" + date.getFullYear();
+         function diario_oficial() {
+            window.open("https://www.diariomunicipal.com.br/femurn/pesquisar?busca_avancada[entidadeUsuaria]=7748&busca_avancada[dataInicio]=" + today + "&busca_avancada[dataFim]=" + today, "_blank")
+         }
+      </script>
    </head>
    <body>
       <div style="width: 100%; height: 3px; background: #003d85"></div>
@@ -14,7 +21,7 @@
          <img src="logopm.png" alt="logo">
          <a href="http://sitionovo.rn.gov.br/" target="_blank">Inicio</a>•
          <a href="https://webmail-seguro.com.br/sitionovo.rn.gov.br/" target="_blank">E-mail</a>•
-         <a href="http://sitionovo.rn.gov.br/servicos/" target="_blank">Serviços</a>•
+         <a onclick="diario_oficial()">Diário Oficial</a>•
          <a href="http://sitionovo.rn.gov.br/portal-da-transparencia/" target="_blank">Portal da Transparência</a>
       </div>
       <div class="container">
